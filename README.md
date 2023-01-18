@@ -8,3 +8,6 @@ The user can save the completion context and use it in future requests  Allowing
 It utilizes the System.Text.Json namespace, a high-performance, and low-allocating JSON library. This allows for efficient JSON data handling when sending the request to the OpenAI API and when parsing the response.  
 
 In summary, this GitHub project is a simple yet powerful OpenAI client, allowing users to quickly generate completions for a given prompt and use the completion context in future requests. It is built on top of the .NET framework, making it easy for developers familiar with C# and the Windows ecosystem to use and understand.  
+
+
+![Screenshot](/Screenshots/Screenshot.png "OpenAi Client Screenshot")
