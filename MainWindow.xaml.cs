@@ -83,7 +83,7 @@ namespace OpenAIClient
                                 Dispatcher.Invoke(() =>
                                 {
                                     lblCompletion.Content = String.Format("Completion context saved. Tokens used: {0}", responseObject.usage.total_tokens);
-                                    txtCompletion.Text = responseObject.choices[0].text.TrimStart('\n').Replace("\n", Environment.NewLine);
+                                    txtCompletion.Text = responseObject.choices[0].text.TrimStart('\n');
                                     context += String.Format("{0}\n", txtCompletion.Text);
                                 });
                             else
