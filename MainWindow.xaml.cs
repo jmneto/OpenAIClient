@@ -94,8 +94,11 @@ namespace OpenAIClient
                     }
                     else
                     {
-                        lblCompletion.Content = "The request was unsuccessful. Status code: " + (int)response.StatusCode;
-                        txtCompletion.Text = "";
+                        Dispatcher.Invoke(() =>
+                        {
+                            lblCompletion.Content = "The request was unsuccessful. Status code: " + (int)response.StatusCode;
+                            txtCompletion.Text = "";
+                        });
                     }
                 }
             });
